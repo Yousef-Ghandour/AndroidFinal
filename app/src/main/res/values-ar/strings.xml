@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">لعبة الألغاز</string>
+    <string name="start_game">ابدأ اللعب</string>
+    <string name="settings">الإعدادات</string>
+    <string name="exit">خروج</string>
+    <string name="level">\المرحلة \</string>
+    <string name="unlock_points">\نقاط الفتح : \</string>
+    <string name="reset_app_data">إعادة ضبط بيانات اللعبة</string>
+    <string name="game_setting">إعدادات اللعبة</string>
+    <string name="profile">الحساب</string>
+    <string name="player_name">اسم اللاعب</string>
+    <string name="player_email">البريد الإلكتروني</string>
+    <string name="player_date">تاريخ الميلاد</string>
+    <string name="player_gender">الجنس</string>
+    <string name="player_country">الدولة</string>
+    <string name="save_data">حفظ البيانات</string>
+    <string name="player_stats">إحصائيات اللاعب</string>
+    <string name="skip">تخطي</string>
+    <string name="continue_question">متابعة</string>
+    <string name="submit">إدخال الإجابة</string>
+    <string name="unlocked">مفتوحة</string>
+    <string name="locked">مغلقة</string>
+    <string name="no_points">يجب أن تمتلك النقاط الكافية لدخول المستوى!</string>
+    <string name="answer">\إجابتك : \</string>
+    <string name="true_answer">\الإجابة الصحيحة : \</string>
+    <string name="played_at">\لعبت بتاريخ : \</string>
+    <string name="need_to_answer">لا بد من الاجابة على السؤال</string>
+    <string name="correct">إجابة صحيحة</string>
+    <string name="incorrect_answer">إجابة خاظئة</string>
+    <string name="dialog_correct">الإجابة صحيحة</string>
+    <string name="dialog_incorrect">الإجابة خاطئة</string>
+</resources>

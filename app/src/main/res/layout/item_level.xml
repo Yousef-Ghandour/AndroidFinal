@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/WholeLevel"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civLevelNo"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@color/app_purple"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:layout_marginVertical="@dimen/_50sdp"/>
+    <TextView
+        android:id="@+id/tvLevelNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintTop_toTopOf="@id/civLevelNo"
+        app:layout_constraintBottom_toBottomOf="@id/civLevelNo"
+        app:layout_constraintStart_toStartOf="@id/civLevelNo"
+        app:layout_constraintEnd_toEndOf="@id/civLevelNo"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvUnlockPoints"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_20sdp"
+        android:gravity="center_vertical"
+        android:layout_marginHorizontal="@dimen/_7sdp"
+        android:layout_marginVertical="@dimen/_50sdp"
+        android:background="@drawable/radius_3"
+        android:fontFamily="@font/ubuntu_regular"
+        android:maxLines="1"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toStartOf="@+id/ivEnterLevel"
+        app:layout_constraintStart_toEndOf="@id/civLevelNo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLevelStatus"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_20sdp"
+        android:gravity="center_vertical"
+        android:layout_marginHorizontal="@dimen/_7sdp"
+        android:layout_marginVertical="@dimen/_7sdp"
+        android:background="@drawable/radius_3"
+        android:fontFamily="@font/ubuntu_regular"
+        android:maxLines="1"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toStartOf="@+id/ivEnterLevel"
+        app:layout_constraintStart_toEndOf="@id/civLevelNo"
+        app:layout_constraintTop_toBottomOf="@id/tvUnlockPoints" />
+    <TextView
+        android:id="@+id/tvDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tvLevelStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="ـــــــــــــــــــــــــــــــــــــــــ"
+        android:layout_marginVertical="@dimen/_10sdp"/>
+
+    <ImageView
+        android:id="@+id/ivEnterLevel"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/ic_arrow"
+        android:layout_marginEnd="@dimen/_25sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/civLevelNo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/civLevelNo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

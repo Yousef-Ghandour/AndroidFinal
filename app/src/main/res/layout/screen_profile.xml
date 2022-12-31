@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/png_background"
+    tools:context=".SettingsSection.ProfileScreen">
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginVertical="@dimen/_50sdp"
+        android:src="@drawable/png_logo"/>
+    <Button
+        android:id="@+id/PlayerStats"
+        android:layout_width="@dimen/_175sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/player_stats"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PlayerCountry"
+        android:layout_marginHorizontal="@dimen/_35sdp"
+        android:layout_marginVertical="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/app_cyan"
+        android:textAllCaps="false"
+        android:fontFamily="@font/ubuntu_bold"
+        />
+
+    <EditText
+        android:id="@+id/PlayerName"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:hint="@string/player_name"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:textColorHint="#808080"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/ubuntu_regular"
+        android:layout_marginVertical="@dimen/_50sdp"
+        />
+
+    <EditText
+        android:id="@+id/PlayerEmail"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:hint="@string/player_email"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:textColorHint="#808080"
+        android:fontFamily="@font/ubuntu_regular"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PlayerName"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginVertical="@dimen/_5sdp"
+        />
+
+    <EditText
+        android:id="@+id/PlayerDate"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:hint="@string/player_date"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:inputType="date"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:textColorHint="#808080"
+        android:fontFamily="@font/ubuntu_regular"
+
+        android:focusableInTouchMode="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PlayerEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginVertical="@dimen/_5sdp"
+        />
+    <EditText
+        android:id="@+id/PlayerSex"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:hint="@string/player_gender"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:textColorHint="#808080"
+        android:fontFamily="@font/ubuntu_regular"
+
+        android:layout_marginVertical="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PlayerDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <EditText
+        android:id="@+id/PlayerCountry"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:hint="@string/player_country"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:textColorHint="#808080"
+        android:fontFamily="@font/ubuntu_regular"
+
+        android:layout_marginVertical="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PlayerSex"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/SavePlayerData"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/save_data"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/app_purple"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PlayerStats"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginVertical="@dimen/_5sdp"
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

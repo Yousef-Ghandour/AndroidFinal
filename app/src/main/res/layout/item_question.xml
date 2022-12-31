@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/QuestionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_16ssp"
+        android:text="Question"
+        android:layout_gravity="right"
+        android:textDirection="rtl"
+        android:layout_marginEnd="@dimen/_35sdp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/ubuntu_regular"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/QuestionBlockChoose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/AnswersGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/Answer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer 1"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/white"
+                android:buttonTint="@color/white"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                />
+            <RadioButton
+                android:id="@+id/Answer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer 2"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+
+                />
+            <RadioButton
+                android:id="@+id/Answer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer 3"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+
+                />
+            <RadioButton
+                android:id="@+id/Answer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer 4"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+
+                />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/QuestionBlockTrueFalse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/TrueFalseGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/TrueRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="true"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+
+                />
+            <RadioButton
+                android:id="@+id/FalseRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="false"
+                android:buttonTint="@color/white"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/QuestionBlockFill"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/FillAnswer"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:fontFamily="@font/ubuntu_regular"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/SubmitAnswer"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/app_purple"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textAllCaps="false"
+        />
+
+
+</LinearLayout>

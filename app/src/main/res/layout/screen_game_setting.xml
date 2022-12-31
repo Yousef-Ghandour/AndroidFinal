@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/png_background"
+    tools:context=".SettingsSection.GameSettingScreen">
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/png_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginVertical="@dimen/_50sdp"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/sSoundSwitch"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo"
+        android:layout_marginVertical="@dimen/_50sdp"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:text="Sound enabled"
+        android:checked="true"
+        app:thumbTint="@color/app_cyan"
+        app:trackTint="@color/app_cyan"
+        android:textColor="@color/white"
+        android:fontFamily="@font/ubuntu_bold"
+        />
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/sNotificationSwitch"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo"
+        android:layout_marginVertical="@dimen/_50sdp"
+        android:text="Notifications enabled"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:checked="true"
+        app:thumbTint="@color/app_cyan"
+        app:trackTint="@color/app_cyan"
+        android:textColor="@color/white"
+        android:fontFamily="@font/ubuntu_bold"
+        />
+    <Button
+        android:id="@+id/ResetAppDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sNotificationSwitch"
+        android:layout_marginVertical="@dimen/_50sdp"
+        android:backgroundTint="@color/app_purple"
+        android:text="@string/reset_app_data"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

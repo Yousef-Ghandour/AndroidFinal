@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reset_app_data">Reset App Data</string>
+    <string name="game_setting">Game Setting</string>
+    <string name="profile">Profile</string>
+    <string name="player_name">Player Name</string>
+    <string name="player_email">Player Email</string>
+    <string name="player_date">Player Date</string>
+    <string name="player_gender">Player Gender</string>
+    <string name="player_country">Player Country</string>
+    <string name="save_data">Save Data</string>
+    <string name="player_stats">Player Stats</string>
+    <string name="skip">Skip</string>
+    <string name="continue_question">Continue</string>
+    <string name="submit">Submit</string>
+    <string name="unlocked">Unlocked</string>
+    <string name="locked">Locked</string>
+    <string name="no_points">You need to collect the needed points to enter this level!</string>
+    <string name="answer">\"Your Answer : \"</string>
+    <string name="true_answer">\"True Answer : \"</string>
+    <string name="played_at">\"Played at : \"</string>
+    <string name="need_to_answer">لا بد من الاجابة على السؤال</string>
+    <string name="correct">Correct Answer</string>
+    <string name="incorrect_answer">Incorrect Answer</string>
+    <string name="dialog_correct">الإجابة صحيحة</string>
+    <string name="dialog_incorrect">الإجابة خاطئة</string>
+</resources>

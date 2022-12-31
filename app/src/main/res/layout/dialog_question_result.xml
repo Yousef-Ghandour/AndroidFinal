@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="@dimen/_10sdp"
+    >
+
+    <TextView
+        android:id="@+id/QuestionIsTrue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        />
+
+    <TextView
+        android:id="@+id/QuestionHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+
+        />
+
+    <Button
+        android:id="@+id/closeDialog"
+        android:text="@string/continue_question"
+        android:fontFamily="@font/ubuntu_bold"
+        android:backgroundTint="@color/app_purple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
