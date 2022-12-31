@@ -76,7 +76,7 @@ public class HomeScreen extends AppCompatActivity {
 
     private void scheduleNotificationJob() {
         int jobId = 1; // The job's unique ID
-        long repeatInterval = TimeUnit.SECONDS.toMillis(5); // Run the job every 24 hours
+        long repeatInterval = TimeUnit.HOURS.toMillis(24); // Run the job every 24 hours
 
         ComponentName serviceComponent = new ComponentName(this, SendNotification.class);
 
@@ -87,7 +87,7 @@ public class HomeScreen extends AppCompatActivity {
         JobScheduler jobScheduler = (JobScheduler) getSystemService(Context.JOB_SCHEDULER_SERVICE);
         jobScheduler.schedule(jobInfo);
         JobInfo job = new JobInfo.Builder(1, new ComponentName(this, SendNotification.class))
-                .setMinimumLatency(TimeUnit.SECONDS.toMillis(5)) // Wait at least 24 hours before executing the job
+                .setMinimumLatency(TimeUnit.HOURS.toMillis(24)) // Wait at least 24 hours before executing the job
                 .build();
 
         // Schedule the job
